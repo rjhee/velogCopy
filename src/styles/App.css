@@ -99,4 +99,34 @@
   font-weight: 600;
   background-color: #a7c0cd;
   color: #fff;
+  transition: 250ms;
+}
+
+.postsDetail-comment-button:hover {
+  background-color: #4b636e;
+}
+
+/* comment list */
+.comment {
+  padding: 2rem 1rem;
+  margin: 2rem 0;
+  border-bottom: 1px solid #a7c0cd76;
+}
+
+.comment-user-name {
+  font-size: var(--font-regular);
+  margin-bottom: 0.4rem;
+}
+
+.comment-created-date {
+  font-size: var(--font-regular);
+
+  color: #a7c0cd;
+}
+
+.comment-contents {
+  width: 100%;
+  padding: 1rem 0;
+  line-height: 1.5;
+  color: #585858;
 }

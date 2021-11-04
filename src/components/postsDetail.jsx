@@ -1,4 +1,5 @@
 import React from 'react';
+import Comments from './comments';
 
 function PostsDetail() {
   return (
@@ -34,6 +35,9 @@ function PostsDetail() {
           </button>
         </form>
       </section>
+      <ul className="comments-list">
+        <Comments></Comments>
+      </ul>
     </div>
   );
 }
