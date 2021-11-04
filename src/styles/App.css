@@ -22,7 +22,28 @@
   padding: 5rem 1rem;
 }
 
+/* modal */
+.modal {
+  position: absolute;
+  top: 1%;
+  left: 1%;
+  width: 100%;
+  max-width: fit-content;
+  height: fit-content;
+  background-color: #a7c0cd;
+  color: #fff;
+  border-radius: 0.4rem;
+  padding: 1rem;
+  font-size: var(--font-small);
+}
+
 /* postsDeatil header */
+.postsDetail-share-btn {
+  display: block;
+  font-size: var(--font-regular);
+  margin-left: auto;
+  color: #a7c0cd;
+}
 
 .postsDetail-title {
   font-size: var(--font-xlarge);
