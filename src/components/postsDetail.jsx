@@ -1,11 +1,33 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Comments from './comments';
+import Modal from './modal';
 
 function PostsDetail() {
+  const [modalOn, setModalOn] = useState(false);
+
+  const onShareModal = () => {
+    const current_url = window.location.href;
+    navigator.clipboard.writeText(current_url).then(() => {
+      setModalOn(true);
+      setTimeout(() => {
+        setModalOn(false);
+      }, 1000);
+    });
+  };
+
   return (
     <div className="postsDetail-wrap">
+      {modalOn === true ? <Modal></Modal> : null}
       <section className="postsDetail">
         <header>
+          <button
+            className="postsDetail-share-btn"
+            onClick={() => {
+              onShareModal();
+            }}
+          >
+            공유하기
+          </button>
           <h1 className="postsDetail-title title">title</h1>
           <div className="postsDetail-info-wrap">
             <span className="postsDetail-user-name">user name</span>
