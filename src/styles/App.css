@@ -23,7 +23,6 @@
 }
 
 /* postsDeatil header */
-
 .postsDetail header {
   border-bottom: 1px solid #a7c0cd76;
 }
@@ -57,7 +56,7 @@
 .postsDetail-tag-wrap span {
   display: inline-block;
   padding: 0.4rem 1rem;
-  margin: 0 0.4rem;
+  margin: 0.4rem;
   border-radius: 1rem;
   background-color: #a7c0cd;
   color: #fff;
