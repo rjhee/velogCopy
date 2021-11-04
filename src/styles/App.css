@@ -23,9 +23,6 @@
 }
 
 /* postsDeatil header */
-.postsDetail header {
-  border-bottom: 1px solid #a7c0cd76;
-}
 
 .postsDetail-title {
   font-size: var(--font-xlarge);
@@ -66,9 +63,12 @@
 /* postsDetail content  */
 .postsDetail-content {
   padding: 1rem;
-  line-height: 1.5;
-  min-height: 10rem;
+  margin-bottom: 5rem;
+  line-height: 1.8;
+  min-height: 20rem;
   color: #585858;
+  border-top: 1px solid #a7c0cd76;
+  border-bottom: 1px solid #a7c0cd76;
 }
 
 /* postsDetail comment */
