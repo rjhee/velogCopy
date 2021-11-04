@@ -26,7 +26,7 @@ function PostsDetail() {
               onShareModal();
             }}
           >
-            공유하기
+            ⋮
           </button>
           <h1 className="postsDetail-title title">title</h1>
           <div className="postsDetail-info-wrap">
