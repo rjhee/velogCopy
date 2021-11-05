@@ -1,7 +1,7 @@
-<h1>2021.11.5-재희</h1>
+<h1>게시글 상세조회 화면 구현</h1>
 <ul>
   <li>
-    게시글 상세조회 화면 구현
+    2021.11.5-재희
     <ol>
       <li>posts header section</li>
       <li>posts contents section</li>
