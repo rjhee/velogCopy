@@ -10,15 +10,17 @@ export default function ListPost() {
   useEffect(() => {
     const fetchPosts = async () => {
       try {
-        // 요청이 시작 할 때에는 error 와 users 를 초기화하고
+        // 요청이 시작 할 때에는 error 를 초기화하고
         setError(null);
         setPosts(null);
         // loading 상태를 true 로 바꿉니다.
         setLoading(true);
         const response = await axios.get(
-          'https://limitless-sierra-67996.herokuapp.com/v1/docs/posts'
-        );
-        setPosts(response.data); // 데이터는 response.data 안에 들어있습니다.
+          'https://limitless-sierra-67996.herokuapp.com/v1/posts'
+        ).then(response => {console.log(response.data); 
+            setPosts(response.data.results);})
+        .catch(() => console.log("error from axios")); 
+         // 데이터는 response.data 안에 들어있습니다.
       } catch (e) {
         setError(e);
       }
@@ -33,14 +35,12 @@ export default function ListPost() {
   if (error) return <div>에러가 발생했습니다</div>;
   if (!posts) return null;
     return (
-        <div>
-            <ul>
-                {posts.map(post => (
-                    <li key={post.id}>
-                    {post.title} ({post.body})({post.tags})
-                    </li>
-                ))}
-            </ul>
-        </div>
+        <ul>
+      {posts.map(post => (
+        <li key={post.id}>
+          {post.title} ({post.body})
+        </li>
+      ))}
+    </ul>
     );
 }
