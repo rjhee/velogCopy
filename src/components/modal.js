@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Modal() {
+function Modal(props) {
   const SUCCESS_TEXT = '복사가 완료 되었습니다 😜';
 
   return (
