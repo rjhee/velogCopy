@@ -151,3 +151,146 @@
   line-height: 1.5;
   color: #585858;
 }
+
+/* upload page */
+.upload-wrap {
+  width: 100%;
+  max-width: 1000px;
+  margin: auto;
+  padding: 5rem 1rem;
+}
+
+/* upload page : header */
+.upload-title {
+  display: flex;
+  flex-direction: column;
+  font-size: var(--font-large);
+  padding: 1rem;
+  margin-bottom: 2rem;
+  width: 100%;
+}
+
+.tag-wrap {
+  font-size: var(--font-regular);
+  padding: 1rem;
+  margin-bottom: 1rem;
+  width: 100%;
+}
+
+.tag-wrap .tag {
+  display: inline-block;
+  padding: 0.4rem 1rem;
+  margin: 0.2rem;
+  background-color: #a7c0cd;
+  border-radius: 3rem;
+  color: #fff;
+  cursor: pointer;
+}
+
+.upload-tag {
+  margin: 0 0.2rem;
+}
+
+.text-style-btn-wrap {
+  display: flex;
+  font-size: 1.2rem;
+}
+
+.text-style-btn-wrap button {
+  padding: 0.2rem;
+  margin: 0 0.4rem;
+}
+
+.text-style-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.text-color {
+  display: block;
+  width: 1.3rem;
+  height: 1.3rem;
+  border-radius: 50%;
+  border: 0.1rem solid #c5c3c3;
+}
+
+.text-color-list {
+  position: absolute;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 10rem;
+  padding: 0.8rem;
+  border: 0.1rem solid #c5c3c3;
+  z-index: 10;
+  background-color: #fff;
+}
+
+.text-color-list li {
+  width: 1.2rem;
+  height: 1.2rem;
+  border-radius: 50%;
+  border: 0.1rem solid #c5c3c3;
+  margin: 0.1rem;
+}
+
+.style-text-size {
+  position: relative;
+}
+
+.text-size-list {
+  position: absolute;
+  width: 8rem;
+  height: fit-content;
+  padding: 0.8rem;
+  border: 0.1rem solid #c5c3c3;
+  z-index: 10;
+  background-color: #fff;
+}
+
+.text-size-list li {
+  padding: 0.4rem;
+  line-height: 1;
+}
+
+/* upload page : content */
+.upload-content {
+  width: 100%;
+  min-height: 20rem;
+  height: fit-content;
+  border-bottom: 1px solid #a7c0cd76;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+/* upload page : footer  */
+.upload-wrap footer {
+  text-align: right;
+}
+
+.upload-wrap footer button {
+  padding: 1rem;
+  margin: 0 0.4rem;
+  border-radius: 3rem;
+  width: 8rem;
+}
+
+.temporary-storage-btn {
+  border: 1px #4b636e solid;
+}
+
+.temporary-storage-btn:hover {
+  background-color: #585858;
+  color: #fff;
+}
+
+.storage-btn {
+  background-color: #a7c0cd;
+  color: #fff;
+}
+
+.storage-btn:hover {
+  background-color: #ef7189;
+}
