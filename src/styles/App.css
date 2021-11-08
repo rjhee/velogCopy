@@ -40,9 +40,13 @@
 /* postsDeatil header */
 .postsDetail-share-btn {
   display: block;
-  font-size: var(--font-large);
-  margin-left: auto;
+  font-size: var(--font-medium);
+  margin: 0 0 1rem auto;
   color: #a7c0cd;
+}
+
+.postsDetail-share-btn:hover {
+  color: #4b636e;
 }
 
 .postsDetail-title {
