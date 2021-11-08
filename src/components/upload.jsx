@@ -72,12 +72,12 @@ function Upload() {
         <section className="upload-content">
           <Editor
             editorState={editorState}
-            toolbarClassName="toolbarClassName"
-            wrapperClassName="wrapperClassName"
-            editorClassName="editorClassName"
+            wrapperClassName="wrapper"
+            toolbarClassName="toolbar"
+            editorClassName="editor"
             onEditorStateChange={onEditorStateChange}
-            placeholder="내용을 작성해주세요."
             localization={{ locale: 'ko' }}
+            placeholder="내용을 작성해주세요."
           />
         </section>
         <footer>
