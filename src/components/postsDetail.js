@@ -5,18 +5,26 @@ import axios from 'axios';
 import { useHistory, useParams } from 'react-router-dom';
 
 function PostsDetail() {
+  let { id } = useParams();
   const [modalOn, setModalOn] = useState(false);
   // let history = useHistory();
-  let { id } = useParams();
 
   const [detailData, setDetailDate] = useState('');
+  const [load, setLoad] = useState(false);
 
   const getData = async (target) => {
-    const data = await axios
-      .get(`https://limitless-sierra-67996.herokuapp.com/v1/${target}/${id}`)
-      .then(
-        (response) => (setDetailDate(response.data), console.log(response.data))
-      );
+    try {
+      setLoad(true);
+      const data = await axios
+        .get(`https://limitless-sierra-67996.herokuapp.com/v1/${target}/${id}`)
+        .then(
+          (response) => (
+            setDetailDate(response.data), console.log(response.data)
+          )
+        );
+    } catch {}
+
+    setLoad(false);
   };
 
   useEffect(() => {
