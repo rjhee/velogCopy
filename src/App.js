@@ -5,8 +5,6 @@ import PostsDetail from './components/postsDetail';
 import Listpage from './pages/Listpage';
 import Upload from './components/upload';
 
-import '@fortawesome/fontawesome-free/js/all.js';
-
 const App = () => {
   return (
     <>

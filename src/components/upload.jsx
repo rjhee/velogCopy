@@ -2,7 +2,7 @@ import React, { useCallback, useState } from 'react';
 
 import { Editor } from 'react-draft-wysiwyg';
 import { EditorState } from 'draft-js';
-import 'react-draft-wysiwyg/dist/react-draft-wysiwyg.css';
+import 'react-draft-w```ysiwyg/dist/react-draft-wysiwyg.css';
 
 function Upload() {
   const [editorState, setEditorState] = useState(EditorState.createEmpty());
@@ -72,12 +72,12 @@ function Upload() {
         <section className="upload-content">
           <Editor
             editorState={editorState}
-            toolbarClassName="toolbarClassName"
-            wrapperClassName="wrapperClassName"
-            editorClassName="editorClassName"
+            wrapperClassName="wrapper"
+            toolbarClassName="toolbar"
+            editorClassName="editor"
             onEditorStateChange={onEditorStateChange}
-            placeholder="내용을 작성해주세요."
             localization={{ locale: 'ko' }}
+            placeholder="내용을 작성해주세요."
           />
         </section>
         <footer>

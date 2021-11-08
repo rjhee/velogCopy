@@ -141,7 +141,6 @@
 
 .comment-created-date {
   font-size: var(--font-regular);
-
   color: #a7c0cd;
 }
 
@@ -172,7 +171,7 @@
 
 .tag-wrap {
   font-size: var(--font-regular);
-  padding: 1rem;
+  padding: 0 1rem;
   margin-bottom: 1rem;
   width: 100%;
 }
@@ -188,13 +187,26 @@
 }
 
 .upload-tag {
-  margin: 0 0.2rem;
+  padding: 0.4rem 1rem;
+  margin: 0.2rem;
 }
 
 /* upload page : content */
+.editor {
+  min-height: 20rem;
+}
+
+.toolbar > div > div {
+  border: none;
+}
+
+.toolbar > div > div:hover {
+  box-shadow: none;
+  background-color: #a7c0cd;
+}
+
 .upload-content {
   width: 100%;
-  min-height: 20rem;
   height: fit-content;
   border-bottom: 1px solid #a7c0cd76;
   padding: 1rem;
@@ -203,11 +215,21 @@
 
 /* upload page : footer  */
 .upload-wrap footer {
-  text-align: right;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  padding: 1rem;
+  box-shadow: 0px -2px 4px rgba(0, 0, 0, 0.08);
+  background-color: #fff;
+  z-index: 10;
 }
 
 .upload-wrap footer button {
-  padding: 1rem;
+  padding: 0.8rem;
   margin: 0 0.4rem;
   border-radius: 3rem;
   width: 8rem;
